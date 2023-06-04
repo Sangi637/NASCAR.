@@ -12,7 +12,7 @@
       font-family: Arial, sans-serif;
     }
     #pozadie{
-      position:absolute;
+      position:fixed;
       z-index:-20;
       width:auto;
       height:auto;
@@ -24,6 +24,7 @@
     }
     .container{
       color:white;
+      margin: auto;
       background-color:rgba(0, 0, 0, 0.7)
     }
     
@@ -35,8 +36,8 @@
     }
     
     .navbar-brand img {
-      width: 300px;
-      height: 70px;
+      width: 250px;
+      height: 50px;
     }
     
     .navbar-nav {
@@ -105,14 +106,20 @@
       }
     }
     footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
       text-align: center;
-      position:static;
-      width:100%;
-      margin-bottom:0;
+      margin-top: 2%;
+      padding: 1%;
+	  font-size:1.3em;
+    color: black;
       
+      
+    }
+    #background_nascar{
+    background-image: url("https://i.pinimg.com/originals/01/d0/15/01d01598bd7c911588567d7a05f12564.jpg");
+    height: calc(150vh - 92px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-r
     }
   </style>
   
@@ -125,7 +132,6 @@
   </script>
 </head>
 <body>
-  <img src="https://i.pinimg.com/originals/01/d0/15/01d01598bd7c911588567d7a05f12564.jpg" id="pozadie">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="nascar.html">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/NASCAR_logo_2017.svg/2560px-NASCAR_logo_2017.svg.png" alt="NASCAR Logo">
@@ -150,43 +156,45 @@
       </ul>
     </div>
   </nav>
-
- <div class="container">
-    <h2>Vitajte na stránke o NASCAR</h2>
-    
-    <p>NASCAR je americká automobilová závodná séria, založená v roku 1948, ktorá je jednou z najpopulárnejších motoristických športov na svete.
-
-Jej hlavnou disciplínou je séria pretekov, kde sa súťaží na okruhoch rýchlostných tratí.
-
-NASCAR je známe pre svoje dramatické a vysokorýchlostné súboje, kde jazdci súperia o víťazstvá a šampionáty v rôznych divíziách a sériách, ako je napríklad Cup Series, Xfinity Series a Truck Series.</p>
-    
-    <h3>Hlavné rysy NASCAR:</h3>
-    <ul>
-      <li>Rýchle a výkonné vozidlá</li>
-      <li>Okrúhle tratě s vysokou bankovou úrovňou</li>
-      <li>Dlhé preteky s vysokou intenzitou</li>
-      <li>Masívna fanúšikovská základňa</li>
-    </ul>
-    
-    <h3>Najlepší jazdci NASCAR:</h3>
-    <p>Kyle Larson: Kyle Larson je momentálne považovaný za jedného z najlepších jazdcov NASCAR. Svojou rýchlosťou, technikou a konzistentnosťou získal veľké množstvo víťazstiev a stal sa jedným z hlavných súperov na trati. Larson je známy svojimi schopnosťami v rôznych typoch okruhov a dominuje v súčasnej dobe.</p>
-
-
-
-<p>Chase Elliott: Chase Elliott je ďalším veľmi talentovaným jazdcom v NASCAR. V roku 2020 sa stal najmladším šampiónom v histórii NASCAR Cup Series. Je synom bývalého šampióna NASCAR Billa Elliotta a zdvojnásobil rodinné dedičstvo svojimi vlastnými úspechmi. Elliott je obľúbený medzi fanúšikmi a je známy svojou rýchlosťou a schopnosťou vyhrávať významné preteky.</p>
-
-
-
-<p>Denny Hamlin: Denny Hamlin je skúseným jazdcom a patrí medzi najlepších v súčasnom poli NASCAR. Vyhrával množstvo pretekov a bol viackrát blízko získaniu titulu šampióna. Hamlin je uznávaný pre svoje výnimočné riadenie vozidla a stratégie pretekov. Je to trvalá sila v sérii NASCAR a patrí medzi obľúbených jazdcov.</p>
-
-
-    
-    <p>Ak máte radi motoristické súťaže plné adrenalínu, určite sa vám bude páčiť aj NASCAR. </p>
+  <div id="background_nascar">
+    <div class="container">
+      <h2>Vitajte na stránke o NASCAR</h2>
+      
+      <p>NASCAR je americká automobilová závodná séria, založená v roku 1948, ktorá je jednou z najpopulárnejších motoristických športov na svete.
+  
+  Jej hlavnou disciplínou je séria pretekov, kde sa súťaží na okruhoch rýchlostných tratí.
+  
+  NASCAR je známe pre svoje dramatické a vysokorýchlostné súboje, kde jazdci súperia o víťazstvá a šampionáty v rôznych divíziách a sériách, ako je napríklad Cup Series, Xfinity Series a Truck Series.</p>
+      
+      <h3>Hlavné rysy NASCAR:</h3>
+      <ul>
+        <li>Rýchle a výkonné vozidlá</li>
+        <li>Okrúhle tratě s vysokou bankovou úrovňou</li>
+        <li>Dlhé preteky s vysokou intenzitou</li>
+        <li>Masívna fanúšikovská základňa</li>
+      </ul>
+      
+      <h3>Najlepší jazdci NASCAR:</h3>
+      <p>Kyle Larson: Kyle Larson je momentálne považovaný za jedného z najlepších jazdcov NASCAR. Svojou rýchlosťou, technikou a konzistentnosťou získal veľké množstvo víťazstiev a stal sa jedným z hlavných súperov na trati. Larson je známy svojimi schopnosťami v rôznych typoch okruhov a dominuje v súčasnej dobe.</p>
+  
+  
+  
+  <p>Chase Elliott: Chase Elliott je ďalším veľmi talentovaným jazdcom v NASCAR. V roku 2020 sa stal najmladším šampiónom v histórii NASCAR Cup Series. Je synom bývalého šampióna NASCAR Billa Elliotta a zdvojnásobil rodinné dedičstvo svojimi vlastnými úspechmi. Elliott je obľúbený medzi fanúšikmi a je známy svojou rýchlosťou a schopnosťou vyhrávať významné preteky.</p>
+  
+  
+  
+  <p>Denny Hamlin: Denny Hamlin je skúseným jazdcom a patrí medzi najlepších v súčasnom poli NASCAR. Vyhrával množstvo pretekov a bol viackrát blízko získaniu titulu šampióna. Hamlin je uznávaný pre svoje výnimočné riadenie vozidla a stratégie pretekov. Je to trvalá sila v sérii NASCAR a patrí medzi obľúbených jazdcov.</p>
+  
+  
+      
+      <p>Ak máte radi motoristické súťaže plné adrenalínu, určite sa vám bude páčiť aj NASCAR. </p>
+    </div>
+    </div>      
   </div>
-  </div>
+ 
 
 <footer>
-    <p>&copy; 2023 NASCAR. Všetky práva vyhradené.</p>
+    <p>&copy; 2023 NASCAR. Juraj Anský.</p>
 </footer>
  <script>
     const navbarToggler = document.querySelector('.navbar-toggler');
